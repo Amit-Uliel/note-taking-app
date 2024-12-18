@@ -20,14 +20,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: hsla(209, 88%, 68%, 1);
-
-background: radial-gradient(circle, hsla(209, 88%, 68%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-
-background: -moz-radial-gradient(circle, hsla(209, 88%, 68%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-
-background: -webkit-radial-gradient(circle, hsla(209, 88%, 68%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#65AFF5", endColorstr="#0974F1", GradientType=1 );
+  background: radial-gradient(circle, hsla(209, 88%, 68%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
+  background: -moz-radial-gradient(circle, hsla(209, 88%, 68%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
+  background: -webkit-radial-gradient(circle, hsla(209, 88%, 68%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#65AFF5", endColorstr="#0974F1", GradientType=1 );
 }
 
 button {

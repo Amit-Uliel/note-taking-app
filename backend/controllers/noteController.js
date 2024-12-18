@@ -91,7 +91,7 @@ export const deleteNote = async (req, res) => {
         const note = await Note.findByIdAndDelete(id);
 
         if (note) {
-            res.json(note);
+            res.status(204).send();
         } else {
             res.status(404).json({ message: 'Note not found' });
         }
