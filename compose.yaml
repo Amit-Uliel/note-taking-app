@@ -1,17 +1,19 @@
 services:
   backend:
     build: ./backend
-    image: backend:v1
+    image: amituliel1/backend:v1
     container_name: backend_c
     ports:
       - "5001:5001"
     volumes:
       - ./backend:/app
       - backend_node_modules:/app/node_modules
+    environment:
+      - MONGO_URI=mongodb://mongodb_c:27017/note-taking-app
 
   frontend:
     build: ./frontend
-    image: frontend:v1
+    image: amituliel1/frontend:v1
     container_name: frontend_c
     ports:
       - "5173:5173"

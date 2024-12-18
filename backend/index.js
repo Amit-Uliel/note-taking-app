@@ -1,10 +1,7 @@
 import mongoose from 'mongoose';
 import app from './server.js';
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/note-taking-app', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect(process.env.MONGO_URI || 'mongodb://mongodb_c:27017/note-taking-app')
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Failed to connect to MongoDB', err));
 
