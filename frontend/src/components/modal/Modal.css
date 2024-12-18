@@ -1,0 +1,42 @@
+.modal-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+    gap: 5px;
+    padding: 10px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 100%;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    width: 100%;
+}
